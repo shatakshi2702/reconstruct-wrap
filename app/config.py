@@ -10,5 +10,6 @@ class Settings(BaseSettings):
     JWT_SECRET: str
     GROQ_API_KEY: str
     ANTHROPIC_API_KEY: str = ""   # optional – required for Claude features
+    POLISH_MODEL: str = "openai/gpt-oss-120b"   # Groq model that redesigns Sketch2UI imports
 
 settings = Settings()
